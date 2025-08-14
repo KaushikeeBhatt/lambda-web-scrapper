@@ -1,0 +1,6 @@
+{
+  "name": "design-hackathon-scheduler",
+  "version": "1.0.0",
+  "description": "Scheduler for design hackathon scraper",
+  "main": "lambda-scheduler.js"
+}
