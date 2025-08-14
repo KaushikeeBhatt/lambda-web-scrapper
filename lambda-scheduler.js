@@ -2,7 +2,7 @@
 const { EC2Client, DescribeInstancesCommand, RunInstancesCommand } = require("@aws-sdk/client-ec2");
 
 const ec2Client = new EC2Client({ region: process.env.AWS_REGION || "ap-south-1" });
-
+// Get UserData script for the EC2 instance
 const getUserData = (s3Bucket) => `#!/bin/bash
 yum update -y
 yum install -y nodejs npm git
